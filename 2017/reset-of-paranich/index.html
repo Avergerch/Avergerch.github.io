@@ -4,22 +4,23 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>La.Saternie</title>
+    <title>帕拉语重启计划 | La.Saternie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Avergerch">
     
 
     
-    <meta name="description" content="blog of avergerch">
-<meta property="og:type" content="website">
-<meta property="og:title" content="La.Saternie">
-<meta property="og:url" content="http://avergerch.github.io/index.html">
+    <meta name="description" content="#???">
+<meta property="og:type" content="article">
+<meta property="og:title" content="帕拉语重启计划">
+<meta property="og:url" content="http://avergerch.github.io/2017/reset-of-paranich/index.html">
 <meta property="og:site_name" content="La.Saternie">
-<meta property="og:description" content="blog of avergerch">
+<meta property="og:description" content="#???">
+<meta property="og:updated_time" content="2017-01-08T11:02:00.504Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="La.Saternie">
-<meta name="twitter:description" content="blog of avergerch">
+<meta name="twitter:title" content="帕拉语重启计划">
+<meta name="twitter:description" content="#???">
 
     
     <link rel="alternative" href="/atom.xml" title="La.Saternie" type="application/atom+xml">
@@ -66,31 +67,72 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
+      <div id="main" class="post" itemscope itemprop="blogPost">
   
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2017/reset-of-paranich/" title="帕拉语重启计划" itemprop="url">
-  
-    <h1 itemprop="name">帕拉语重启计划</h1>
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-     
-           <p itemprop="description" >#???</p>
-        
+      <a href="/2017/reset-of-paranich/" title="帕拉语重启计划" itemprop="url">帕拉语重启计划</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Avergerch" target="_blank" itemprop="author">Avergerch</a>
+		
+  <p class="article-time">
+    <time datetime="2017-01-08T10:58:40.000Z" itemprop="datePublished"> 发表于 2017-01-08</time>
     
-    <time datetime="2017-01-08T10:58:40.000Z" itemprop="datePublished">2017-01-08</time>
-  </a>
-</section>
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			
+		
+		</div>
+		
+		<p>#???</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
 
-
-
-
-
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/langauge/">Langauge</a>
+</div>
 
 
 </div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://avergerch.github.io/2017/reset-of-paranich/" data-title="帕拉语重启计划 | La.Saternie" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+	
+
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ 
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -190,12 +232,89 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -266,4 +385,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
